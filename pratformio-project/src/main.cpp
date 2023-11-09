@@ -1,6 +1,7 @@
 #include <Arduino.h>
 #include <WiFi.h>
 #include "esp_wifi.h"
+#include "constants.h"
 
 #define TOTAL_PINS 12
 #define USE_WIFI true
@@ -10,8 +11,8 @@ char inputBuffer[bufferSize + 1];
 // int pins[] = {15,4,17,18,21,23,13,14,26,25,32,33};
 int pins[] = {23,21,17,18,4,15,13,14,25,26,32,33};
 
-const char* ssid = "NET_2GA9619C";
-const char* password = "51A9619C";
+const char* ssid = constants::SSID;
+const char* password = constants::PASSWORD;
 
 const uint ServerPort = 23;
 WiFiServer server(ServerPort);
