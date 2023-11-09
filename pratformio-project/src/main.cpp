@@ -89,25 +89,4 @@ void loop(){
       }
     }
   }
-
-
 }
-
-
-
-// void loop() {
-//   ledcWrite(15, 0);
-//   if (Serial.available() >= TOTAL_PINS) {
-//     // read the incoming byte:
-//     byte bytesRead = Serial.readBytesUntil('\n', inputBuffer, bufferSize);
-
-//     if (bytesRead == TOTAL_PINS) {
-//       for (int j = 0; j < TOTAL_PINS; j++) {
-//         value = inputBuffer[j] - '0';
-//         ledcWrite(j, value);
-//       }
-//     } else {
-//       Serial.println("Quantidade invalida");
-//     }
-//   }
-// }
